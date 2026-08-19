@@ -6,9 +6,9 @@ class DataAccess
 	
 	public function __construct()
 	{
-		if(!$this->_con=mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME))
+		if(!$this->_con = @mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME))
 		{
-			die("connection Error");
+			die("<div style='padding:20px; font-family:sans-serif; text-align:center;'><h2>Database Connection Pending</h2><p>Please set your <b>DB_HOST</b>, <b>DB_USER</b>, <b>DB_PASSWORD</b>, and <b>DB_NAME</b> in your Render dashboard environment settings.</p></div>");
 		}
 		$this->_errors ="";
 	} 
