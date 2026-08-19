@@ -110,7 +110,7 @@ class FormAssist
 		}
 		
 	}
-	public function dropDownList($name,$attributes=array(),$options,$default="select")
+	public function dropDownList($name, $attributes = array(), $options = array(), $default = "select")
 	{
 		$this->_str="";
 		if(isset($this->_fields[$name]))
@@ -148,7 +148,7 @@ class FormAssist
 			return "Error...";
 		}
 	}
-	public function ajaxHelperDropDownList($name,$attributes=array(),$options,$default="select",$num=1)
+	public function ajaxHelperDropDownList($name, $attributes = array(), $options = array(), $default = "select", $num = 1)
 	{
 		$this->_str="";
 		if(isset($this->_fields[$name]))
@@ -243,7 +243,7 @@ class FormAssist
 	
 	
 	
-	public function RadioGroup($name,$attributes=array(),$options,$vertical = false)
+	public function RadioGroup($name, $attributes = array(), $options = array(), $vertical = false)
 	{
 		$this->_str="";
 		if(isset($this->_fields[$name]))
@@ -283,7 +283,7 @@ class FormAssist
 			return "Error...";
 		}
 	}
-	public function CheckBoxList($name,$attributes=array(),$options,$vertical = false)
+	public function CheckBoxList($name, $attributes = array(), $options = array(), $vertical = false)
 	{
 		$this->_str="";
 		if(isset($this->_fields[$name]))
