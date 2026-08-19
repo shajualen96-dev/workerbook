@@ -7,6 +7,10 @@ require_once(__DIR__ . '/config/database.php');
 
 // Database Connection
 $conn = @new mysqli($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME);
+if ($conn && $conn->connect_error) {
+    $message = "Database connection pending. Please set your database environment variables (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) in your hosting dashboard.";
+    $message_type = "danger";
+}
 
 $message = "";
 $message_type = "";
