@@ -3,7 +3,7 @@
 // Turn off reporting uncaught exception for mysqli to prevent raw stack trace crash on screen
 mysqli_report(MYSQLI_REPORT_OFF);
 
-$DB_HOST     = getenv('DB_HOST') ?: "localhost";
+$DB_HOST     = getenv('DB_HOST') ?: "127.0.0.1";
 $DB_NAME     = getenv('DB_NAME') ?: "worker";
 $DB_USER     = getenv('DB_USER') ?: "root";
 $DB_PASSWORD = getenv('DB_PASSWORD') ? getenv('DB_PASSWORD') : "";
