@@ -4,12 +4,3 @@ services:
     env: docker
     dockerfilePath: Dockerfile
     plan: free
-    envVars:
-      - key: DB_HOST
-        sync: false
-      - key: DB_NAME
-        sync: false
-      - key: DB_USER
-        sync: false
-      - key: DB_PASSWORD
-        sync: false
